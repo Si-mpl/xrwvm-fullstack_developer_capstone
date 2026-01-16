@@ -13,6 +13,17 @@ img{
   margin-bottom: 1%;
 }
 
+.card2{
+  border: rgb(103, 102, 105) 3px solid;
+  display: flex;  
+  flex-direction: column;
+  margin-left:5%;
+  margin-right:5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+
 .row{
   display: flex;  
   flex: 1;
