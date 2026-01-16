@@ -13,15 +13,6 @@ img{
   margin-bottom: 1%;
 }
 
-.card2{
-  border: rgb(103, 102, 105) 3px solid;
-  display: flex;  
-  flex-direction: column;
-  margin-left:5%;
-  margin-right:5%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
 
 
 .row{
@@ -50,6 +41,14 @@ img{
   text-align: center;
   margin:20px;
   padding:5px;
+}
+
+.contact{
+    font-size: 16px;
+    color: rgb(20, 70, 235);
+    text-align: center;
+    margin:20px;
+    padding:5px;
 }
 
 .homepage_links{
@@ -135,3 +134,14 @@ img{
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
 }
+
+.card2-shadow-br {
+    box-shadow: 8px 8px 20px rgba(0,0,0,0.3);
+}
+
+.img-max-icon {
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    width: auto
+  }
