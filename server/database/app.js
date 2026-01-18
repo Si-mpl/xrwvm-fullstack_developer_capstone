@@ -92,6 +92,7 @@ app.get('/fetchDealer/:id', async (req, res) => {
 //Express route to insert review
 app.post('/insert_review', express.raw({ type: '*/*' }), async (req, res) => {
   data = JSON.parse(req.body);
+  console.log("caught")
   const documents = await Reviews.find().sort( { id: -1 } );
   let new_id = documents[0].id+1;
 
@@ -109,6 +110,7 @@ app.post('/insert_review', express.raw({ type: '*/*' }), async (req, res) => {
 
   try {
     const savedReview = await review.save();
+    console.log("saved")
     res.json(savedReview);
   } catch (error) {
 		console.log(error);
