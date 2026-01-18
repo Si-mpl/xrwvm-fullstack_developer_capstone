@@ -41,10 +41,10 @@ const Dealer = () => {
       method: "GET"
     });
     const retobj = await res.json();
-    
+
     if(retobj.status === 200) {
       if(retobj.reviews.length > 0){
-        setReviews(retobj.reviews)
+        setReviews(retobj.reviews);
       } else {
         setUnreviewed(true);
       }

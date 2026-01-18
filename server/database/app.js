@@ -66,10 +66,6 @@ app.get('/fetchDealers', async (req, res) => {
     }
 });
 
-/* 
-curl -X GET "https://u5traceed-3030.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/fetchDealers/Kansas"
-*/
-
 // Express route to fetch Dealers by a particular state
 app.get('/fetchDealers/:state', async (req, res) => {
     try {
