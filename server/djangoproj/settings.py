@@ -29,8 +29,11 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 
-        'https://u5traceed-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai']
-CSRF_TRUSTED_ORIGINS = ['https://u5traceed-8000.theiadockernext-0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai']
+        """https://u5traceed-8000.theiadockernext-0-labs-pro
+        d-theiak8s-4-tor01.proxy.cognitiveclass.ai"""]
+CSRF_TRUSTED_ORIGINS = ["""hcd /home/project/xrwvm-fullstack_
+        developer_capstone/serverttps://u5traceed-8000.theiadockernext
+        -0-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai"""]
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [],
