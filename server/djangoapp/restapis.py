@@ -24,11 +24,12 @@ def get_request(endpoint, **kwargs):
     try:
         # Call get method of requests library with URL and parameters
         response = requests.get(request_url)
+        response.raise_for_status()
         return response.json()
     except Exception as err:
         # If any error occurs
         print(f"Unexpected {err=}, {type(err)=}")
-        print("Network exception occurred")
+        print("Network exception occurred on get request")
 
 
 def analyze_review_sentiments(text):
