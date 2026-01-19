@@ -17,7 +17,7 @@ const Dealer = () => {
   const [postReview, setPostReview] = useState(<></>)
 
   let curr_url = window.location.href;
-  let root_url = curr_url.substring(0,curr_url.indexOf("dealer"));
+  let root_url = curr_url.substring(0, curr_url.indexOf("dealer"));
   let params = useParams();
   let id =params.id;
   let dealer_url = root_url+`djangoapp/dealer/${id}`;
@@ -61,8 +61,6 @@ const Dealer = () => {
     get_reviews();
     if(sessionStorage.getItem("username")) {
       setPostReview(<a href={post_review}><img src={review_icon} style={{width:'10%',marginLeft:'10px',marginTop:'10px'}} alt='Post Review'/></a>)
-
-      
     }
   },[]);  
 
@@ -71,6 +69,7 @@ return(
   <div style={{margin:"20px"}}>
       <Header/>
       <div style={{marginTop:"10px"}}>
+      <a href={`/searchcars/${id}`}>SearchCars</a>	
       <h1 style={{color:"grey"}}>{dealer.full_name}{postReview}</h1>
       <h4  style={{color:"grey"}}>{dealer['city']},{dealer['address']}, Zip - {dealer['zip']}, {dealer['state']} </h4>
       </div>
