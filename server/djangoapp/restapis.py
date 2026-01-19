@@ -41,7 +41,7 @@ def searchcars_request(endpoint, **kwargs):
         for key, value in kwargs.items():
             params = params + key + "=" + value + "&"
 
-    request_url = backend_url + endpoint + "?" + params
+    request_url = searchcars_url + endpoint + "?" + params
 
     print("GET from {} ".format(request_url))
     try:

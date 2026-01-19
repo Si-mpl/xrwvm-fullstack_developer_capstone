@@ -200,9 +200,9 @@ const SearchCars = () => {
     }
 
     useEffect(() => {
-        fetchDars();
+        fetchCars();
         fetchDealer();
-    }, []{
+    }, [])
 
     return (
     <div>
@@ -294,6 +294,4 @@ const SearchCars = () => {
   );
 };
 
-export default SearchCars       
-    })
-}
+export default SearchCars;
